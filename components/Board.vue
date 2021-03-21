@@ -1,5 +1,5 @@
 <template>
-  <div :id="id" class="board" @dragover.prevent @drop.prevent="drop">
+  <div :id="id" class="board" @dragover.prevent @drop.self="drop">
     <slot />
   </div>
 </template>
